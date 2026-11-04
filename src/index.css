@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-primary: #2E7D5B;
+  --color-brand-primary-dark: #22603F;
+  --color-brand-secondary: #2563A8;
+  --color-brand-accent: #E8833A;
+  --color-brand-bg: #F4F7F6;
+  --color-brand-danger: #C0392B;
+  --font-sans: "Inter", "Roboto", system-ui, sans-serif;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-brand-bg);
+}
+
+.step-dot {
+  transition: all 0.2s ease;
+}
