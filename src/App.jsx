@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import { AppProvider } from "./context/AppContext";
 import Inicio from "./pages/Inicio";
 import Login from "./pages/Login";
@@ -11,7 +11,7 @@ import Admin from "./pages/Admin";
 export default function App() {
   return (
     <AppProvider>
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
           <Route path="/" element={<Inicio />} />
           <Route path="/login" element={<Login />} />
@@ -21,7 +21,7 @@ export default function App() {
           <Route path="/solicitudes" element={<Solicitudes />} />
           <Route path="/admin" element={<Admin />} />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </AppProvider>
   );
 }
